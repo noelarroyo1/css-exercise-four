@@ -1,4 +1,91 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  margin: 2% auto;
+  width: 100%;
+}
+
+.header {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1.4em;
+  letter-spacing: .3em;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+div {
+  background-color: TRANSPARENT;
+  float: left;
+  margin: 5% 1% 1% 1%;
+  width: 100%;
+  padding: 5% 25% 50% 5%;
+}
+
+/* To make 2 columns */
+@media screen and (min-width: 575px){
+  .header {
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+
+  div {
+    margin: 1% 1%;
+    padding: 4% 25% 25% 4%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .header {
+    margin-top: 4%;
+    margin-bottom: 0%;
+  }
+
+  div {
+    margin: 5% 1%;
+    padding: 3% 20% 20% 3%;
+    width: 20%;
+  }
+}
+
+/* For all background images */
+.preview-baku {
+  background-image: url(../images/baku.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.preview-london {
+  background-image: url(../images/london.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.preview-madrid {
+  background-image: url(../images/madrid.jpg);
+  background-repeat: no-repeat;
+  background-position: center 2% left 1%;
+  background-size: cover;
+}
+
+.preview-rome {
+  background-image: url(../images/rome.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2em;
 }
